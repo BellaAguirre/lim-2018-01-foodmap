@@ -1,0 +1,17 @@
+body {  
+  background: hsla(240, 20%, 99%, 0.897);
+}
+header {
+  background: crimson;
+  color: #fff;
+  height: 60px;
+}
+img {
+  width: 100%;
+  height: 100%;
+}
+#map {
+  width: 100%;
+  height: 200px;
+  border: 1px solid
+}
