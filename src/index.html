@@ -10,12 +10,15 @@
   <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
-  <header>
+  <div id="contenedor-carga">
+      <div id="carga"></div>
+  </div>
+  <header id="title-principal">
     <div class="container">
       <h1>FoodMap</h1> 
     </div>
   </header>
-  <main class="container">
+  <main class="container" id="container-main">
     <div class="row mt-3">
       <div class="col-12 col-sm-12">
         <div id="map"></div>
@@ -32,27 +35,12 @@
           </div>
       </div>
     </div>
-      <div class="row mt-3">
-        <div class="col-4 col-xs-4 pr-0">
-            <img src="https://www.ecestaticos.com/imagestatic/clipping/a37/e87/a37e87cc8398716f60bd27367fe22e08/esto-es-lo-que-nunca-debes-pedir-en-un-restaurante-chino.jpg?mtime=1494254720" alt="" />            
-        </div>
-        <div class="col-4 col-xs-4 pl-1 pr-1">
-            <img src="https://www.ecestaticos.com/imagestatic/clipping/a37/e87/a37e87cc8398716f60bd27367fe22e08/esto-es-lo-que-nunca-debes-pedir-en-un-restaurante-chino.jpg?mtime=1494254720" alt="" />                      
-        </div>
-        <div class="col-4 col-xs-4 pl-0">
-            <img src="https://www.ecestaticos.com/imagestatic/clipping/a37/e87/a37e87cc8398716f60bd27367fe22e08/esto-es-lo-que-nunca-debes-pedir-en-un-restaurante-chino.jpg?mtime=1494254720" alt="" />                      
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-6 col-xs-6 pr-1">
-          <img src="https://www.ecestaticos.com/imagestatic/clipping/a37/e87/a37e87cc8398716f60bd27367fe22e08/esto-es-lo-que-nunca-debes-pedir-en-un-restaurante-chino.jpg?mtime=1494254720" alt="" />                        
-        </div>
-        <div class="col-6 col-xs-6 pl-1">
-          <img src="https://www.ecestaticos.com/imagestatic/clipping/a37/e87/a37e87cc8398716f60bd27367fe22e08/esto-es-lo-que-nunca-debes-pedir-en-un-restaurante-chino.jpg?mtime=1494254720" alt="" />            
-        </div>
+      <div class="row mt-3 pl-3 pr-3" id="place-near">
+        
       </div>
   </main>
   <script src="app.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGarR7t25kmW2h3xui1Eb20LrgahXciu4&libraries=places&callback=initMap">
     </script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
