@@ -28,7 +28,7 @@
       <div class="col-12 col-sm-12">
         <div class="input-group mb-4 mt-3">
         <label for="" class="col-12 col-sm-12 pl-0 font-weight-bold text-uppercase">Comidas cerca de ti</label>
-        <input type="text" class="form-control" placeholder="Buscar restaurantes" aria-label="Username" aria-describedby="basic-addon1"/>
+        <input type="text" class="form-control" id="search-place" placeholder="Buscar restaurantes" aria-label="Username" aria-describedby="basic-addon1"/>
             <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
             </div>
@@ -39,6 +39,8 @@
         
       </div>
   </main>
+  <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+
   <script src="app.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDGarR7t25kmW2h3xui1Eb20LrgahXciu4&libraries=places&callback=initMap">

@@ -1,3 +1,46 @@
+const config = {
+  apiKey: 'AIzaSyC2RzmstCckIkInzF8hsHScfSy152fBn3g',
+  authDomain: 'foodmap-ed9cc.firebaseapp.com',
+  databaseURL: 'https://foodmap-ed9cc.firebaseio.com',
+  projectId: 'foodmap-ed9cc',
+  storageBucket: 'foodmap-ed9cc.appspot.com',
+  messagingSenderId: '286710424042'
+};
+firebase.initializeApp(config);
+
+firebase.auth().signInAnonymously().catch(function(error) {
+  // Handle Errors here.
+  var errorCode = error.code;
+  var errorMessage = error.message;
+  // ...
+});
+firebase.auth().onAuthStateChanged(function(user) {
+  if (user) {
+    // User is signed in.
+    var isAnonymous = user.isAnonymous;
+    var uid = user.uid;
+    console.log(user)
+    // ...
+  } else {
+    // User is signed out.
+    // ...
+  }
+  // ...
+});
+const createDataPlace = (place) => {
+  const userId = firebase.auth().currentUser.uid;
+  console.log(place);
+  
+  firebase.database().ref('places/' + userId).push({
+    hola: place.name
+  })
+}
+
+document.getElementById('search-place').addEventListener('keyup', () => {
+ const search = document.getElementById('search-place').value;
+
+})
+
 let map;
 let service;
 var infowindow;
@@ -63,8 +106,8 @@ const viewRestaurant = (place) => {
   for (const key in place) {
     if(key === 'photos') {
       document.getElementById('place-near').innerHTML += `
-        <div class="col-4 col-xs-4 p-1">
-            <img src="${place[key][0].getUrl({'maxWidth': 200, 'maxHeight': 200})}" onclick="hola()" alt="" />            
+        <div class='col-4 col-xs-4 p-1'>
+            <img src='${place[key][0].getUrl({'maxWidth': 200, 'maxHeight': 200})}' onclick='hola()' alt='' />            
         </div>
         `;
     }
@@ -75,7 +118,8 @@ const callback = (results, status) => {
     for (let i = 0; i < results.length; i++) {
       const place = results[i];
       createMarker(place);
-      viewRestaurant(place)
+      viewRestaurant(place);
+      createDataPlace(place);
     }
   }
 }
