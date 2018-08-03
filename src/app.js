@@ -58,7 +58,6 @@ const createMarker = (place) => {
 // mostrando foto de los restaurantes mas cerca
 const viewRestaurant = (place) => {
   for (const key in place) {
-    console.log(place[key]);
     if (place[key].photos) {
      containerPlace.innerHTML += `
       <div class='col-4 col-xs-4 p-1 col-lg-3' id="${place[key].place_id}">
