@@ -58,6 +58,7 @@ const createMarker = (place) => {
 // mostrando foto de los restaurantes mas cerca
 const viewRestaurant = (place) => {
   for (const key in place) {
+    console.log(place[key]);
     if (place[key].photos) {
      containerPlace.innerHTML += `
       <div class='col-4 col-xs-4 p-1 col-lg-3' id="${place[key].place_id}">
@@ -75,6 +76,7 @@ const viewRestaurant = (place) => {
             <div class="modal-body">
             <p><strong>Direccion: </strong>${place[key].vicinity}</p>
             <p><strong>Valoracion: </strong>${place[key].rating}</p>
+            <p><strong>Estado: </strong>${place[key].opening_hours !==undefined ? place[key].opening_hours.open_now ? 'Abierto' : 'Cerrado' : 'Cerrado' }</p>            
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-dismiss="modal">Pedir ya!!!</button>
