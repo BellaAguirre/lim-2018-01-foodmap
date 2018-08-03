@@ -1,10 +1,9 @@
-body {  
-  background:white;
-}
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif');
 header {
   background: crimson;
   color: #fff;
   height: 60px;
+  font-family: 'Bree Serif', serif;
 }
 img {
   width: 100%;
@@ -21,8 +20,7 @@ img {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-#contenedor-carga {
-  /* background-color: rgba(250, 240, 245, 0.9); */
+#container-splash {
   height: 100%;
   width: 100%;
   position: fixed;
@@ -31,9 +29,9 @@ img {
   transition: all 1s ease;
   z-index: 10000;
 }
-#carga {
+#splash {
   border: 15px solid #ccc;
-  border-top-color: #F4266A;
+  border-top-color: crimson;
   border-top-style: groove;
   height: 100px;
   width: 100px;
