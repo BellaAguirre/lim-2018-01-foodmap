@@ -5,6 +5,98 @@
     "apertura" : "Martes a Domingo",
     "horario": "12:30 - 15:30, 19:00 - 21:30",
     "telefono": "(01) 6771571",
-    "tipo": "Tailandesa"
+    "tipo": "Tailandesa",
+    "precio": 40,
+    "photo": "https://lh3.googleusercontent.com/Wo-VrxZwnTKnXIIa8Z8ELdxkQ47RUvg6Uzqi0BFbqxNFCjWk_zV27ZRfLWiczPIAZV9lTzNhCQ=h305-no"
+  },
+  {
+    "name": "ESPRESSATE VEGAN",
+    "direccion": "Av. Primavera 120, Santiago de Surco 15038",
+    "apertura" : "Lunes a Sabado",
+    "horario": "07:00 - 23:00",
+    "telefono": "(01) 3633342",
+    "tipo": "Vegana, vegetariana",
+    "precio": 30,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipNVZzdwfO8-rihh3yoTI2HzbOhaFS-GV5DgpWL4=w102-h168-p-k-no"
+  },
+  {
+    "name": "Restaurante Cabaña Vista Alegre",
+    "direccion": "Calle Punta Pejerrey 190, Santiago de Surco 15038",
+    "apertura" : "Lunes a Sabado",
+    "horario": "12:00 - 23:30",
+    "telefono": "(01) 2734401",
+    "tipo": "Carnes",
+    "precio": 60,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipN25J02z6ofbqj2trOA7LrikjA959uHIpYs8vU7=w208-h168-p-k-no"
+  },
+  {
+    "name": "Antica Pizzeria",
+    "direccion": "Av. Primavera 335, San Borja 15037",
+    "apertura" : "Lunes a Domingo",
+    "horario": "12:00 - 00:00",
+    "telefono": "(01) 3721336",
+    "tipo": "Pizza y pastas",
+    "precio": 45,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipNdj4X0j6eIya8wR3Xd_E0J-oeFIe7j0ZHypfHR=w314-h168-p-k-no"
+  },
+  {
+    "name": "José Antonio",
+    "direccion": "Trinidad 320, Distrito de Lima 15037",
+    "apertura" : "Lunes a Domingo",
+    "horario": "12:30 - 16:30, 19:30 - 23:00",
+    "telefono": "(01) 3726868",
+    "tipo": "Comida típica",
+    "precio": 40,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipN9JRyspSV64Qp8A6OxIpTCdZWMXrgzl-oq7Bw7=w155-h168-p-k-no"
+  },
+  {
+    "name": "The Burger Factory Resto bar",
+    "direccion": "Av. Caminos del Inca 120, Santiago de Surco",
+    "apertura" : "Lunes a Sabado",
+    "horario": "12:00 - 15:00, 19:00 - 23:00",
+    "telefono": "(01) 2670784",
+    "tipo": "Hamburguesas, comida rapida, vegetariana",
+    "precio": 30,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipPAlSxm34SEmocqIk5BNopEdlCKEugOUUYjgDDJ=w314-h168-p-k-no"
+  },
+  {
+    "name": "Restaurante Arlotia",
+    "direccion": "Av. Almte. Miguel Grau 340, Barranco 15063",
+    "apertura" : "Martes a Sabado",
+    "horario": "12:00 - 23:00",
+    "telefono": "(01) 2562269",
+    "tipo": "tapas y platos vascos.",
+    "precio": 18,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipNkPNb0elE-aQFYA4znrr6CHQphs3C0Ho2XiTwL=w208-h168-p-k-no"
+  },
+  {
+    "name": "Amoramar",
+    "direccion": "García y García 175, Barranco 15063",
+    "apertura" : "Lunes a Domingo",
+    "horario": "12:30 - 16:00, 20:00 - 23:30",
+    "telefono": "(01) 6199595",
+    "tipo": "marina",
+    "precio": 30,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipP2noanbbGrQf-Cj1CZsqnecLUmLKbKouIqiDJX=w179-h168-p-k-no"
+  },
+  {
+    "name": "Puro Perú Buffet Gourmet",
+    "direccion": "Av. República de Panamá 258, Barranco",
+    "apertura" : "Lunes a Domingo",
+    "horario": "12:30 - 17:00",
+    "telefono": "(01) 4770111",
+    "tipo": "buffet",
+    "precio": 90,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipOyTPTiVTWqF3UF0w2ZYC2CMKIUoS4aKCyzfv12=w314-h168-p-k-no"
+  },
+  {
+    "name": "Bujama Beach Barranco",
+    "direccion": "jr.arica 520, Barranco 15049",
+    "apertura" : "Lunes a Domingo",
+    "horario": "10:00 - 17:00",
+    "telefono": "944 233 925",
+    "tipo": "venezolana",
+    "precio": 30,
+    "photo": "https://lh5.googleusercontent.com/p/AF1QipNp9T0vlqen8_Ia_BNYlUuaqqu-6jIelIeQrxR5=w314-h168-p-k-no"
   }
 ]
