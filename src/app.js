@@ -11,7 +11,7 @@ window.onload = () => {
     containerSplash.style.opacity = '0';
     containerHeader.style.visibility = '';
     containerMain.style.visibility = '';
-  }, 2000); 
+  }, 2000);
 }
 
 // mostrando foto de los restaurantes mas cerca
@@ -20,7 +20,7 @@ const viewRestaurant = (place) => {
      containerPlace.innerHTML += `
       <div class='col-4 col-xs-4 p-1 col-lg-3' id="${place[key].id}">
             <img src="${place[key].photo}" data-toggle="modal" data-target="${'#exampleModal'+ place[key].id}" alt="${place[key].name}" />
-            <p>${place[key].name}</p>            
+            <p>${place[key].name}</p>
         <div class="modal fade" id="${'exampleModal'+ place[key].id}" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
         <div class="modal-dialog" role="document">
           <div class="modal-content">
@@ -33,7 +33,7 @@ const viewRestaurant = (place) => {
             <div class="modal-body">
             <p><strong>Direccion: </strong>${place[key].direccion}</p>
             <p><strong>Horario: </strong>${place[key].horario}</p>
-            <p><strong>Telefono: </strong>${place[key].telefono}</p>            
+            <p><strong>Telefono: </strong>${place[key].telefono}</p>
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-warning" data-dismiss="modal">Pedir ya!!!</button>
