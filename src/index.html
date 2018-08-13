@@ -16,7 +16,6 @@
     </div>
     <div id="splash">
     </div>
-      
   </div>
   <header id="title-principal">
     <div class="container">
@@ -26,15 +25,25 @@
   <main class="container" id="container-main">
     <div class="row mt-3">
       <div class="col-12 col-sm-12">
-        <div id="map"></div>
+        <div id="map">
+          <img src="img/map.png" class="img-map" alt="localizacion">
+        </div>
       </div>
     </div>
     <div class="row">
       <div class="col-12 col-sm-12">
         <div class="input-group mb-4 mt-3">
-        <label for="search-place" class="col-12 col-sm-12 pl-0 font-weight-bold text-uppercase">Restaurantes cerca de ti</label>
-        <input type="text" class="form-control" id="search-place" placeholder="Buscar restaurantes" aria-label="Username" aria-describedby="basic-addon1"/>
-            <div class="input-group-prepend">
+          <label for="search-place-direction" class="col-12 col-sm-12 pl-0 font-weight-bold text-uppercase">Restaurantes cerca de ti</label>
+          <select class="form-control" id="search-place-direction">
+            <option value="">Selecciona un Distrito</option>
+            <option value="Barranco">Barranco</option>
+            <option value="Surco">Surco</option>
+            <option value="San Borja">San Borja</option>
+            <option value="Lima">Lima</option>
+          </select>
+          <label for="search-place" class="col-12 col-sm-12 pl-0 font-weight-bold text-uppercase">Comida cerca de ti</label>
+          <input type="text" class="form-control" id="search-place" placeholder="Buscar restaurantes" aria-label="Username" aria-describedby="basic-addon1"/>
+              <div class="input-group-prepend">
               <span class="input-group-text" id="basic-addon1"><i class="fas fa-search"></i></span>
             </div>
           </div>
@@ -43,9 +52,8 @@
     <div class="row mt-3 pl-3 pr-3" id="place-near">
     </div>
   </main>
+  <script src="data.js"></script>
   <script src="app.js"></script>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDac2-aVNkMsIsHa3KUuXrdCG8Rj82U4fk&libraries=places&callback=initMap"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
